@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عالم الذكاء الصغير — Mini AI World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="site-wrapper">
+        <!-- الشريط العلوي للهوية والتنقل -->
+        <header class="navbar">
+            <div class="brand">
+                <span class="logo-dot">🤖</span>
+                <div>
+                    <div class="brand-name">Mini AI World</div>
+                    <div class="brand-sub">نفكر بذكاء.. ونتعلم بأمان</div>
+                </div>
+            </div>
+
+            <nav class="nav-links">
+                <button class="nav-btn active" data-target="home-section" onclick="showSection('home-section', this)">الرئيسية</button>
+                <button class="nav-btn" data-target="lessons-section" onclick="showSection('lessons-section', this)">الشرح والمفاهيم</button>
+                <button class="nav-btn" data-target="media-section" onclick="showSection('media-section', this)">الفيديو والوسائط</button>
+                <button class="nav-btn" data-target="activities-section" onclick="showSection('activities-section', this)">الأنشطة التفاعلية</button>
+                <button class="nav-btn" data-target="quiz-section" onclick="showSection('quiz-section', this)">التقويم النهائي</button>
+            </nav>
+        </header>
+
+        <!-- 1. الصفحة الرئيسية -->
+        <section id="home-section" class="page-section active">
+            <div class="hero-card">
+                <div class="hero-text">
+                    <span class="tag">كائن تعلم رقمي تفاعلي • المرحلة الابتدائية العليا</span>
+                    <h1>أهلاً بك في عالم الذكاء الصغير</h1>
+                    <p>
+                        مرحباً بك مع صديقنا الروبوت <strong>"سيم"</strong>! ستتعلم هنا كيف يفكر الكمبيوتر،
+                        وكيف يتعلم من الصور والبيانات، وكيف تستخدم الذكاء الاصطناعي والإنترنت بأمان ومسؤولية.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary" onclick="jumpToSection('lessons-section')">ابدأ رحلة الشرح والتعلم 📚</button>
+                        <button class="btn btn-outline" onclick="jumpToSection('activities-section')">جرّب الأنشطة مباشرة 🎮</button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <img src="saim.png" alt="الروبوت سيم" class="hero-img" onerror="this.style.display='none'">
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>📖 شرح مبسط وواضح</h3>
+                    <p>دروس قصيرة ومقسمة بأسلوب يناسب التلاميذ مع أمثلة من الحياة اليومية.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🎬 صور وفيديوهات تعليمية</h3>
+                    <p>وسائط بصرية توضيحية ومشاهد فيديو لتقريب المفاهيم المجردة.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>✅ تغذية راجعة فورية</h3>
+                    <p>تفاعل مباشر يوضح سبب الخطأ ويشجع على المحاولة حتى الوصول للحل الصحيح.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. قسم الشرح والمفاهيم -->
+        <section id="lessons-section" class="page-section">
+            <div class="section-header">
+                <h2>وحدات الشرح والمفاهيم الأساسية</h2>
+                <p>اقرأ البطاقات التعليمية التالية بهدوء قبل الانتقال إلى الفيديوهات والأنشطة.</p>
+            </div>
+
+            <div class="lessons-grid">
+                <!-- الدرس الأول -->
+                <article class="lesson-card">
+                    <div class="lesson-badge">الوحدة 1</div>
+                    <img src="computer.png" alt="ما هو الذكاء الاصطناعي" class="card-img" onerror="this.style.display='none'">
+                    <h3>ما هو الذكاء الاصطناعي؟</h3>
+                    <p>
+                        الحاسوب العادي ينفذ التعليمات الثابتة التي نكتبها له حرفياً، أما <strong>الذكاء الاصطناعي</strong>
+                        فيمكّن الأنظمة من تحليل البيانات والتعرف على الأنماط واتخاذ قرارات ذكية، مثل التعرف على الصوت أو الصور.
+                    </p>
+                    <div class="mini-note">مثال: تطبيقات الترجمة الفورية والمساعدات الصوتية.</div>
+                </article>
+
+                <!-- الدرس الثاني -->
+                <article class="lesson-card">
+                    <div class="lesson-badge">الوحدة 2</div>
+                    <img src="cat.png" alt="تعلم الآلة" class="card-img" onerror="this.style.display='none'">
+                    <h3>كيف تتعلم الآلة من البيانات؟</h3>
+                    <p>
+                        تماماً كما يتعرف الطفل على "القطة" بعد رؤية صور وأمثلة كثيرة لها، يتدرب نموذج الذكاء الاصطناعي
+                        على مجموعة بيانات (صور، أصوات، نصوص) ليكتشف الفروق ويصنف العناصر بدقة أكبر كلما تدرب أكثر.
+                    </p>
+                    <div class="mini-note">مثال: تصنيف الصور والتمييز بين الكائنات والآلات.</div>
+                </article>
+
+                <!-- الدرس الثالث -->
+                <article class="lesson-card">
+                    <div class="lesson-badge">الوحدة 3</div>
+                    <img src="lock.png" alt="الأمان والأخلاقيات" class="card-img" onerror="this.style.display='none'">
+                    <h3>الأمان الرقمي وأخلاقيات الذكاء</h3>
+                    <p>
+                        الذكاء الاصطناعي أداة قوية يجب استخدامها بمسؤولية؛ لذلك لا نشارك معلوماتنا الشخصية
+                        (مثل الاسم الكامل أو العنوان أو كلمة المرور) مع الغرباء، ونستشير والديّ أو معلمنا دائماً.
+                    </p>
+                    <div class="mini-note">قاعدة ذهبية: خصوصيتك وأمانك أولاً.</div>
+                </article>
+            </div>
+
+            <div class="section-footer-cta">
+                <button class="btn btn-primary" onclick="jumpToSection('media-section')">الانتقال إلى الفيديو والوسائط 🎬</button>
+            </div>
+        </section>
+
+        <!-- 3. قسم الفيديوهات والوسائط المتعددة -->
+        <section id="media-section" class="page-section">
+            <div class="section-header">
+                <h2>مكتبة الفيديو والوسائط التوضيحية</h2>
+                <p>شاهد الفيديو التعليمي واستعرض معرض الوسائط البصرية لدعم الفهم.</p>
+            </div>
+
+            <div class="media-layout">
+                <!-- مشغل الفيديو -->
+                <div class="video-box">
+                    <h3>🎥 فيديو تعريفي: كيف يعمل الذكاء الاصطناعي؟</h3>
+                    <p class="small-desc">
+                        تشغيل الفيديو التعليمي المباشر <code>ai-intro.mp4</code> أو التبديل إلى فيديو تعليمي عبر YouTube.
+                    </p>
+
+                    <div id="local-video-container" class="video-frame">
+                        <video id="local-video" controls poster="computer.png">
+                            <source src="ai-intro.mp4" type="video/mp4">
+                            المتصفح لا يدعم تشغيل الفيديو المباشر.
+                        </video>
+                    </div>
+
+                    <div id="youtube-video-container" class="video-frame" style="display: none;">
+                        <iframe
+                            id="yt-iframe"
+                            src=""
+                            title="فيديو تعليمي عن الذكاء الاصطناعي"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <div class="video-switcher">
+                        <button class="btn btn-sm btn-primary" onclick="switchVideoSource('local')">فيديو الجهاز (MP4)</button>
+                        <button class="btn btn-sm btn-outline" onclick="switchVideoSource('youtube')">فيديو تعليمي (YouTube)</button>
+                    </div>
+                </div>
+
+                <!-- معرض الصور التوضيحية -->
+                <div class="gallery-box">
+                    <h3>🖼️ بطاقات بصرية من العالم الرقمي</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="tree.png" alt="كائن حي" onerror="this.style.display='none'">
+                            <span>بيانات طبيعية (نباتات وحيوانات)</span>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="car.png" alt="آلة" onerror="this.style.display='none'">
+                            <span>آلات وتقنيات حديثة</span>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="warning.png" alt="تنبيه أمني" onerror="this.style.display='none'">
+                            <span>تنبيهات الأمان والحذر</span>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="star.png" alt="تميز" onerror="this.style.display='none'">
+                            <span>تحقيق أهداف التعلم</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-footer-cta">
+                <button class="btn btn-primary" onclick="jumpToSection('activities-section')">ابدأ الأنشطة التفاعلية الآن 🎮</button>
+            </div>
+        </section>
+
+        <!-- 4. قسم الأنشطة التفاعلية -->
+        <section id="activities-section" class="page-section">
+            <div class="section-header">
+                <h2>الأنشطة التفاعلية وتدريب الروبوت "سيم"</h2>
+                <p>أجب عن كل نشاط لتحصل على تغذية راجعة فورية وتفتح النشاط التالي.</p>
+            </div>
+
+            <!-- نشاط 1 -->
+            <div class="activity-card" id="act-card-1">
+                <h3>النشاط 1: تصنيف الصور للروبوت</h3>
+                <p>أمامك ثلاث صور: قطة، شجرة، سيارة. ما التصنيف الأدق لها؟</p>
+                <div class="triple-img">
+                    <div><img src="cat.png" alt="قطة" onerror="this.style.display='none'"><p>قطة</p></div>
+                    <div><img src="tree.png" alt="شجرة" onerror="this.style.display='none'"><p>شجرة</p></div>
+                    <div><img src="car.png" alt="سيارة" onerror="this.style.display='none'"><p>سيارة</p></div>
+                </div>
+                <div class="choice-row">
+                    <button class="btn-choice ok" onclick="handleActivity(1, true)">القطة والشجرة كائنات حية، والسيارة آلة</button>
+                    <button class="btn-choice no" onclick="handleActivity(1, false)">جميعها آلات مصنوعة من الحديد</button>
+                </div>
+                <div id="act-feedback-1" class="feedback-box"></div>
+            </div>
+
+            <!-- نشاط 2 -->
+            <div class="activity-card" id="act-card-2">
+                <h3>النشاط 2: كيف يتعلم الكمبيوتر؟</h3>
+                <p>لماذا يحتاج نموذج الذكاء الاصطناعي إلى أمثلة وبيانات كثيرة؟</p>
+                <div class="choice-row">
+                    <button class="btn-choice ok" onclick="handleActivity(2, true)">ليكتشف الأنماط ويتحسن أداؤه تدريجياً</button>
+                    <button class="btn-choice no" onclick="handleActivity(2, false)">لأن الشاشة تنطفئ بدون بيانات</button>
+                </div>
+                <div id="act-feedback-2" class="feedback-box"></div>
+            </div>
+
+            <!-- نشاط 3 -->
+            <div class="activity-card" id="act-card-3">
+                <h3>النشاط 3: موقف في الأمان الرقمي</h3>
+                <p>طلب منك حساب غير معروف عنوان منزلك وكلمة مرورك مقابل هدية في لعبة. ماذا تفعل؟</p>
+                <div class="choice-row">
+                    <button class="btn-choice no" onclick="handleActivity(3, false)">أرسل البيانات لأحصل على الهدية</button>
+                    <button class="btn-choice ok" onclick="handleActivity(3, true)">أرفض وأخبر والديّ أو معلمي فوراً</button>
+                </div>
+                <div id="act-feedback-3" class="feedback-box"></div>
+            </div>
+
+            <div class="section-footer-cta">
+                <button class="btn btn-primary" onclick="jumpToSection('quiz-section')">الانتقال إلى التقويم النهائي 🏆</button>
+            </div>
+        </section>
+
+        <!-- 5. قسم التقويم النهائي -->
+        <section id="quiz-section" class="page-section">
+            <div class="section-header">
+                <h2>التقويم الختامي والشهادة التفاعلية</h2>
+                <p>اختر إجابة لكل سؤال ثم اضغط "عرض النتيجة" لمعرفة مستواك.</p>
+            </div>
+
+            <form id="final-quiz-form" class="quiz-box">
+                <div class="quiz-q">
+                    <p><strong>السؤال 1:</strong> أي مما يلي يُعد مثالاً على استخدام مفيد للذكاء الاصطناعي؟</p>
+                    <label><input type="radio" name="q1" value="correct"> أداة مساعدة في تعلم اللغات وتنظيم المذاكرة</label>
+                    <label><input type="radio" name="q1" value="wrong"> إرسال رسائل مزيفة لخداع الآخرين</label>
+                </div>
+
+                <div class="quiz-q">
+                    <p><strong>السؤال 2:</strong> ما الذي يساعد نظام الذكاء الاصطناعي على تمييز الصور بدقة أفضل؟</p>
+                    <label><input type="radio" name="q2" value="wrong"> إخفاء الصور وعدم تدريب النظام</label>
+                    <label><input type="radio" name="q2" value="correct"> تدريبه على بيانات وأمثلة متنوعة وصحيحة</label>
+                </div>
+
+                <div class="quiz-q">
+                    <p><strong>السؤال 3:</strong> ما التصرف الأخلاقي والآمن عند استخدام التقنيات الحديثة؟</p>
+                    <label><input type="radio" name="q3" value="correct"> احترام خصوصية الآخرين وحماية بياناتي الشخصية</label>
+                    <label><input type="radio" name="q3" value="wrong"> نشر صور ومعلومات أصدقائي دون إذنهم</label>
+                </div>
+
+                <div class="hero-actions">
+                    <button type="button" class="btn btn-primary" onclick="gradeFinalQuiz()">عرض النتيجة والوسام 🏅</button>
+                    <button type="button" class="btn btn-outline" onclick="resetQuiz()">إعادة الاختبار 🔄</button>
+                </div>
+            </form>
+
+            <div id="quiz-result" class="certificate-box" style="display: none;"></div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
